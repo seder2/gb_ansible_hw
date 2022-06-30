@@ -1,0 +1,9 @@
+---
+- name: Echo some data to stdout
+  hosts: server
+  tasks: 
+    - name: Create base directory at the server
+      file: 
+        name: "/tmp/temp-123"
+        state: directory
+
