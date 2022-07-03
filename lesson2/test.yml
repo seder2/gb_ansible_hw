@@ -1,0 +1,6 @@
+---
+- name: Echo some data to stdout
+  hosts: server
+  roles:      
+    - fs_prov  
+

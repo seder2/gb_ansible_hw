@@ -1,0 +1,5 @@
+---
+- name: Create base directory at the server
+  file:
+    name: "/tmp/temp123"
+    state: directory
