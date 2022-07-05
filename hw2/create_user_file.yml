@@ -1,0 +1,6 @@
+---
+- name: Create user,group and file on server
+  hosts: server
+  roles: 
+    - add_file
+    - add_user

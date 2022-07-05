@@ -1,0 +1,6 @@
+---
+base_dir: "/tmp"
+file_name: "tmp_123.txt"
+user_group: "test_group"
+user_name: "test_user"
+user_password: "123"

@@ -1,0 +1,11 @@
+- name: Add the group
+  group:
+    name: "{{ user_group }}"
+    state: present 
+- name: Add the user
+  user:
+    name: "{{ user_name }}"
+    password: "{{ user_password | password_hash('sha512') }}"
+    shell: /bin/bash
+    group: "{{ user_group }}"
+
