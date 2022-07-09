@@ -1,0 +1,8 @@
+---
+- name: Create user,group and file on server
+  hosts: server
+  vars_files:
+    - vault_vars.yml      
+  roles: 
+    - add_file
+    - add_user
