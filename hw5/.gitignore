@@ -1,0 +1,6 @@
+external_roles
+
+# vim buffers
+*.swp
+*.swo
+

@@ -1,0 +1,5 @@
+---
+- name: Create directory
+  hosts: all
+  roles:
+    - dir_file      

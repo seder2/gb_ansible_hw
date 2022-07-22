@@ -1,0 +1,5 @@
+---
+- name: Test for NGINX
+  hosts: all
+  roles: 
+    - test_nginx

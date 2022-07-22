@@ -1,0 +1,12 @@
+---
+- name: GET request
+  uri:
+    url: http://192.168.78.136
+    return_content: yes
+  register: this
+  failed_when: "'nginx' not in this.content"  
+- name: file exists
+  stat:
+    path: /etc/nginx/nginx.conf
+  register: register_name
+
