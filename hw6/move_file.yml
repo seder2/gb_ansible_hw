@@ -1,0 +1,5 @@
+---
+- name: Move file to server
+  hosts: all
+  roles: 
+    - move_file

@@ -1,0 +1,6 @@
+---
+# tasks file for move_file
+- name: transfer file to server
+  copy:
+    src: /home/roman/gb_ansible_hw/gb_ansible_hw/hw6/roles/files/file
+    dest: /tmp/file  

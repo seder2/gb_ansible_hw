@@ -1,0 +1,7 @@
+---
+# tasks file for file_checksum
+- name: Download file with check (sha256)
+  get_url:
+    url: https://github.com/ansible/ansible/blob/stable-2.7/examples/ansible.cfg
+    dest: /tmp/ansible.cfg
+    checksum: sha256:6de949645e7ad8f19ab0aec8dd3ad9d0d7de3bdec2efc84313d988ed76132005

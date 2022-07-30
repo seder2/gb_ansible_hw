@@ -1,0 +1,8 @@
+---
+- name: install nginx
+  import_playbook: nginx.yml
+  tags: nginx
+
+- name: setup nginx
+  import_playbook: nginx_setup.yml
+  tags: setup 
