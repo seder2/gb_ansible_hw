@@ -1,0 +1,5 @@
+---
+- name: Download file with check (sha256)
+  hosts: all
+  roles:
+    - file_checksum
