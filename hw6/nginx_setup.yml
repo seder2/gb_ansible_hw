@@ -1,0 +1,6 @@
+---
+- name: Nginx_configuration
+  hosts: all
+  roles:
+    - includes
+

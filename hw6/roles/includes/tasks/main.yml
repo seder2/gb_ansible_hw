@@ -1,0 +1,10 @@
+---
+- name: Render nginx.worker_connect_conf
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+
+- name: Render nginx.port_conf      
+  template:
+    src: nginx.port_conf.j2
+    dest: /etc/nginx/sites-enabled/default   
